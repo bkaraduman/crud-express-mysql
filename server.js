@@ -16,6 +16,8 @@ app.get('/', (req, res) => {
 const employeeRoutes = require('./src/routes/employee.routes')
 app.use('/api/v1/employees', employeeRoutes)
 
+const articleRoutes = require('./src/routes/article.routes')
+app.use('/api/v1/articles', articleRoutes)
 
 // listen for requests
 app.listen(port, () => {
